@@ -1,6 +1,6 @@
 # Professional Portfolio
-![Static Badge](https://img.shields.io/badge/build-passing-brightgreen) ![Static Badge](https://img.shields.io/badge/AI-YES-blue)
-![Static Badge](https://img.shields.io/badge/contributors-myself-orange) ![Static Badge](https://img.shields.io/badge/elapsed-16hr-white)
+![Static Badge](https://img.shields.io/badge/build-failing-red) ![Static Badge](https://img.shields.io/badge/AI-NO-blue)
+![Static Badge](https://img.shields.io/badge/contributors-myself-orange) ![Static Badge](https://img.shields.io/badge/elapsed-1hr-white)
 
 ## Description
 
