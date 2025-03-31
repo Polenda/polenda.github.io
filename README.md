@@ -9,9 +9,7 @@ This project is all about makign a prototype for a mobile application designed a
 The steps for ths project:
 
 - [] Homework 7 - Pitch
-
 - [] Homework 8 - Storyboard
-
 - [X] Homework 9 - 1-Screen App
 
 - [] Homework 10 - Navigation and Components
