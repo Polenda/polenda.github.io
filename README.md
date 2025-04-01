@@ -4,12 +4,15 @@
 
 ## Description
 
-This project is all about makign a prototype for a mobile application designed and development by myself. Through a 5 week process we attempt to follow the basics step of app development to create a 1-page app as a proof of concept.
+This project is the development of my portfolio
 
 The steps for ths project:
 
-- [ ] Homework 7 - Pitch
-- [ ] Homework 8 - Storyboard
-- [X] Homework 9 - 1-Screen App
-- [ ] Homework 10 - Navigation and Components
-- [ ] Homework 11 - Interactivity
+- [ ] Base homepage
+- [ ] Projects Tab
+- [ ] Education Tab
+- [ ] Work Expierence Tab
+- [ ] Self Rated Skills Tab
+- [ ] Research Tab
+- [ ] Media links
+- [ ] Quality visual design
