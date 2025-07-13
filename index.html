@@ -1,41 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Daniel Polen | Portfolio</title>
-  <link rel="stylesheet" href="./styles/body.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polen, Daniel Resume</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
-    <h1>Welcome to My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="navbar">
+      <h1>Daniel Polen</h1>
+      <nav>
+        <button onclick="showSection('about')">About</button>
+        <button onclick="showSection('projects')">Projects</button>
+        <button onclick="showSection('experience')">Experience</button>
+        <button onclick="showSection('education')">Education</button>
+        <button onclick="showSection('research')">Research</button>
+        <button onclick="showSection('skills')">Skills</button>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm Daniel Polen, a creative technologist with a passion for gamification, data science, and interactive design.</p>
+    <section id="about" class="content">
+      <h2>AREA OF EXPERTISE</h2>
+      <p>Unity Game Engine <br>
+        Unreal Game Engine 5 <br>
+        Video Game Design <br>
+        UI/UX Design <br>
+        Web Development <br>
+        Database Design</p>
+
+        
+    </section>
+    <section id="projects" class="content"> 
+      <h2>polenda.github.io, Portfolio Webpage Project</h2>
+        <p>Participated in classes and lab duties for all personal and grant projects under supervision.</p>
+
+      <h2>Kiss of Death, CMSC-445: Intro to Game Dev at VCU</h2>
+        <p>Co-developer for a school project inside of the Unity Engine Instructed by multidisciplinary professors.</p> 
+        
+      <h2>Database Webpage, CMSC-408: Databases at VCU</h2>
+        <p>Participated in classes and lab duties for all personal and grant projects under supervision.</p>
+
+      <h2>CS-25-338 Identifying Components, VCU CS Senior Capstone</h2>
+        <p>Project Manager for an AI/ML image processing model using Python, PyTorch and Ultralytics YOLO.</p>
+    </section>
+    <section id="experience" class="content">
+      <h2>Grading Assistant, CMSC-408: Databases at VCU</h2>
+        <p>Worked with the Professor and TA with course work grading and project evaluation. <br>
+        Aided students with questions and concerns regarding coursework, lecture material, and instructions.</p>
+
+      <h2>ACT Field Technician, Eagle Construction of VA</h2>
+        <p>Execute and process data from technology focused on construction technology and providing reports. <br>
+        Frontend development using React and Typescript with Tailwind CSS. <br>
+        Backend development in Python using FastAPI backed by MongoDB for the database. </p>
+    </section>
+    <section id="education" class="content">
+      <h2>Bachelor of Science in Computer Science</h2>
+      <h3>Virginia Commonwealth University</h3>
+        <p>Cumulative GPA: 3.5 <br>
+        Dean’s List: 2024-2025 <br>
+        Clubs: Founding President: VCU Men’s Club Basketball, Game Creator’s Coalition, D&D at VCU </p>
+
+      <h2>Associate of Science in Computer Science</h2>
+      <h3>J. Sargeant Reynolds Community College</h3>
+        <p>Cumulative GPA: 3.3 <br>
+        Dean’s List: 2022 </p>
+    </section>
+    <section id="research" class="content"> 
+      <h2>Undergraduate Research, VCU Applied Arts Lab</h2>
+        <p>Participated in classes and lab duties for all personal and grant projects under supervision.<br>
+        Supported the development of creating scientific visualizations in Unreal Engine 5.</p>
+    </section>
+    <section id="skills" class="content"> 
+      <p>Languages: Python, C#, Typescript, HTML, C++, C, Javascript, Java<br>
+      Communication: Networking, Project management, Teamwork Mentality, Critical Thinking <br>
+      Leadership: Self-awareness, Empathy, Adaptability, Professionalism, Decision Making, Active Listening </p>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Check out some of the cool stuff I've been working on!</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email me at <a href="mailto:daniel@example.com">daniel@example.com</a></p>
-    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Daniel Polen</p>
-  </footer>
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.content');
+      sections.forEach(sec => sec.style.display = 'none');
+      const target = document.getElementById(id);
+      if (target) target.style.display = 'block';
+    }
+    window.onload = () => showSection('about');
+  </script>
+
+
 </body>
 </html>
