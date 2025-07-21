@@ -47,7 +47,7 @@ p {
 }
 
 /* Navigation Buttons */
-nav button {
+.navbar button {
   background-color: transparent;
   border: 1px solid #aaa;
   color: #fff;
@@ -59,7 +59,7 @@ nav button {
   transition: all 0.2s ease-in-out;
 }
 
-nav button:hover {
+.navbar button:hover {
   background-color: #aaa;
   color: #1f1f23;
 }
@@ -72,7 +72,7 @@ main {
 .grid {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   flex-wrap: wrap;
   margin-top: 2rem;
 }
@@ -82,7 +82,8 @@ main {
   background-color: #2e2e33;
   padding: 1rem;
   border-radius: 10px;
-  width: 280px;
+  width: 20%;
+  height: 500px; 
   text-align: center;
   text-decoration: none;
   color: inherit;
@@ -90,8 +91,8 @@ main {
 }
 
 .card img {
-  max-width: 280px;
-  height: 270px;
+  max-width: 100%;
+  height: 50%;
   border-radius: 8px;
   object-fit: cover;
   display: block;
