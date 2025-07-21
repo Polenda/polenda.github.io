@@ -19,6 +19,7 @@ strong {
   font-weight: 1500;
   font-size: 2rem;
   margin: 0.5rem;
+  margin-left: 1rem;
 }
 /* Top level Heading */
 h1, h2, h3, h5, p {
@@ -52,6 +53,7 @@ p {
 /* Header Navbar Styling */
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #000;
@@ -64,7 +66,6 @@ p {
   display: flex;
   align-items: center;
 }
-
 /* Navigation Buttons */
 .navbar button {
   background-color: transparent;
@@ -79,7 +80,6 @@ p {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-
 .navbar button:hover {
   background-color: #aaa;
   color: #1f1f23;
