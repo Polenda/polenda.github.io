@@ -16,3 +16,14 @@ The steps for ths project:
 - [ ] Research Tab
 - [ ] Media links
 - [ ] Quality visual design
+
+
+### Future additions:
+    - Would like to have a timeline at the bottom of each major tab that shows howw I've changed over time
+
+    Examples:
+        > showing how long and when a project was made
+        > displaying half of the graph where i was in school and if i had a job or not
+
+        add image here
+
