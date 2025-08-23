@@ -1,6 +1,12 @@
 /* Color Variables */
 :root {
   --background-color: #292930;
+  --card-background-color: #2e2e33;
+  --low-xp-color: #86FC3C;
+  --high-xp-color: #175295;
+  --black: #000000;
+  --white: #FFFFFF;
+  --shadow-color: rgba(0, 0, 0, 0.25);
 }
 /* Font Variables */
 :root {
@@ -27,7 +33,7 @@ h1, h2, h3, h5, p {
   font-weight: 500;
 }
 h1 {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   font-size: 1.6rem;
   font-weight: 900;
 }
@@ -48,6 +54,23 @@ p {
   margin-top: 0.5rem;
   font-weight: 350;
   font-size: 1rem;
+}
+
+.about-img {
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 32px;
+  display: block;
+  margin: 0.5rem auto 0.5rem auto;
+  box-shadow: 0 2px 16px var(--shadow-color);
+}
+.about-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
 }
 
 /* Header Navbar Styling */
@@ -98,7 +121,7 @@ main {
 }
 
 .card {
-  background-color: #2e2e33;
+  background-color: var(--card-background-color);
   padding: 1rem;
   border-radius: 10px;
   width: 300px;
@@ -106,7 +129,7 @@ main {
   text-align: center;
   text-decoration: none;
   color: inherit;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px var(--shadow-color);
 }
 
 .card img {
@@ -116,4 +139,60 @@ main {
   object-fit: cover;
   display: block;
   margin: auto;
+}
+
+/* Skill Bars */
+.skill-list {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.05rem;
+}
+
+.skill-item span {
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 0.1rem;
+}
+
+.skill-bar {
+  width: 100%;
+  background: var(--card-background-color);
+  box-shadow: 0 0 10px var(--shadow-color);
+  border-radius: 8px;
+  height: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-bar-fill {
+  background: linear-gradient(90deg, var(--high-xp-color) 0%, var(--low-xp-color) 100%);
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 12px;
+  border-radius: 8px;
+}
+
+.skill-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+
 }
