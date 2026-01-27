@@ -9,13 +9,13 @@ This project is the development of my portfolio
 The steps for ths project:
 
 - [X] Base homepage
-- [ ] Projects Tab
-- [ ] Education Tab
-- [ ] Work Expierence Tab
-- [ ] Self Rated Skills Tab
-- [ ] Research Tab
+- [X] Projects Tab
+- [X] Education Tab
+- [X] Work Expierence Tab
+- [X] Self Rated Skills Tab
+- [X] Research Tab
 - [ ] Media links
-- [ ] Quality visual design
+- [X] Quality visual design
 
 
 ### Future additions:
