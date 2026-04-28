@@ -24,6 +24,8 @@
         <button onclick="showSection('skills')">Skills</button>
       </nav>
     </div>
+    <script type="text/javascript" src="svg-map/mapdata.js"></script>		
+    <script  type="text/javascript" src="svg-map/usmap.js"></script>
   </header>
 
   <main>
@@ -44,102 +46,111 @@
           <p>Sports is something that I've always loved and enjoyed, and I've spent much of my time finding ways to combine this love with my passion for Computer Science.
           I mostly have experience with basketball and soccer both recreationally and professionally, but my favorite sport to play is Volleyball in rec leagues.
           Baseball, Basketball and Soccer have also been a major interest for me in regards to sports analytics and the role of statistics used within the sports.</p>
+
+          <h1>Golf Hobby Progress</h1>
+
+          <h2>Achieved Goals</h2>
+          <grid class="grid">
+            <a class="card">
+              <img src="temp/Golf/bestscore.png"/>
+              <h1>Best Score</h1><h5>April 13th, 2026</h5><h3>Woodley Lakes Golf Course</h3>
+              <p>
+                Par: 72 <br>
+                Tees: White 69.0/114 <br>
+                Length: 6272yds <br>
+                Score: 94 (48/46)
+              </p>
+            </a>
+            <a class="card">
+              <img src="temp/Golf/firstpar.png"/>
+              <h1>First Par</h1><h5>Janurary 15th, 2026</h5><h3>Woodley Lakes Golf Course</h3>
+              <p>
+                Hole: 11 <br>
+                Par: 4 <br>
+                Yds: 289 yds <br>
+                Tees: Yellow
+              </p>
+            </a>
+            <a class="card">
+              <img src="temp/Golf/firstbirdie.png"/>
+              <h1>First Birdie</h1><h5>April 27th, 2026</h5><h3>Sepulveda Balboa Golf Course</h3>
+              <p>
+                Hole: 11 <br>
+                Par: 4<br>
+                Yds: 276 yds <br>
+                Tees: White
+              </p>
+            </a>
+            <a class="card">
+              <img src="temp/Golf/break100.png"/>
+              <h1>Break 100</h1><h5>April 9th, 2026</h5><h3>Woodley Lakes Golf Course</h3>
+              <p>
+                Par: 72 <br>
+                Tees: White 69.0/114 <br>
+                Length: 6272yds <br>
+                Score: 98 (49/49)
+              </p>
+            </a>
+            
+          </grid>
+          <h2>Goals to Achieve</h2>
+          <grid class="grid">
+            <a class="card">
+              <img src="temp/Golf/grey.png"/>
+              <h1>First Eagle</h1><h5>--</h5><h3>--</h3>
+              <p>
+                Hole: <br>
+                Yds: <br>
+                Par: <br>
+                Tees: 
+              </p>
+            </a>
+            <a class="card">
+              <img src="temp/Golf/grey.png"/>
+              <h1>Break 90</h1><h5>--</h5><h3>--</h3>
+              <p>
+                Par: <br>
+                Tees: <br>
+                Length:  <br>
+                Front 9:  <br>
+                Back 9: 
+              </p>
+            </a>
+            <a class="card">
+              <img src="temp/Golf/grey.png"/>
+              <h1>Break 80</h1><h5>--</h5><h3>--</h3>
+              <p>
+                Par: <br>
+                Tees: <br>
+                Length: <br>
+                Front 9: <br>
+                Back 9: 
+              </p>
+            </a>
+            <a class="card">
+              <img src="temp/Golf/grey.png"/>
+              <h1>Break Par</h1><h5>--</h5><h3>--</h3>
+              <p>
+                Par: <br>
+                Tees: <br>
+                Length: <br>
+                Front 9: <br>
+                Back 9: 
+              </p>
+            </a>
+          </grid>
+
+          <h1>Quest to Golf in the entire United States</h1>
+          <p><span id="stateCount">2</span> / 56 States + Territories</p>
+          <div class="map-container">
+            <div id="map"></div>
+          </div>
         </div>
-        
       </div>
 
-    
-      <h1>Golf Achievements</h1>
-      <grid class="grid">
-        <a class="card">
-          <img src="temp/Golf/score.png"/>
-          <h1>Lowest Score</h1><h5>April 9th, 2026</h5><h3>Woodley Lakes Golf Course</h3>
-          <p>
-            Tees: White 69.0/114 <br>
-            Length: 6272yds <br>
-            Front 9: 49 (+13) <br>
-            Back 9: 49 (+13)
-          </p>
-        </a>
-        <a class="card">
-          <img src="temp/Golf/hole11.png"/>
-          <h1>First Par</h1><h5>Janurary 15th, 2026</h5><h3>Woodley Lakes Golf Course</h3>
-          <p>
-            Hole: 11 <br>
-            Yds: 289 yds <br>
-            Par: 4 <br>
-            Tees: Yellow 66.4/106
-          </p>
-        </a>
-        <a class="card">
-          <img src="temp/Golf/grey.png"/>
-          <h1>First Birdie</h1><h5>--</h5><h3>--</h3>
-          <p>
-            Hole: <br>
-            Yds: <br>
-            Par: <br>
-            Tees: 
-          </p>
-        </a>
-        <a class="card">
-          <img src="temp/Golf/grey.png"/>
-          <h1>First Eagle</h1><h5>--</h5><h3>--</h3>
-          <p>
-            Hole: <br>
-            Yds: <br>
-            Par: <br>
-            Tees: 
-          </p>
-        </a>
-      </grid>
-      <grid class="grid">
-        <a class="card">
-          <img src="temp/Golf/woodley.png"/>
-          <h1>Break 100</h1><h5>April 9th, 2026</h5><h3>Woodley Lakes Golf Course</h3>
-          <p>
-            Tees: White 69.0/114 <br>
-            Length: 6272yds <br>
-            Front 9: 49 (+13) <br>
-            Back 9: 49 (+13)
-          </p>
-        </a>
-        <a class="card">
-          <img src="temp/Golf/grey.png"/>
-          <h1>Break 90</h1><h5>--</h5><h3>--</h3>
-          <p>
-            Tees: <br>
-            Length:  <br>
-            Front 9:  <br>
-            Back 9: 
-          </p>
-        </a>
-        <a class="card">
-          <img src="temp/Golf/grey.png"/>
-          <h1>Break 80</h1><h5>--</h5><h3>--</h3>
-          <p>
-            Tees: <br>
-            Length: <br>
-            Front 9: <br>
-            Back 9: 
-          </p>
-        </a>
-        <a class="card">
-          <img src="temp/Golf/grey.png"/>
-          <h1>Break Par</h1><h5>--</h5><h3>--</h3>
-          <p>
-            Tees: <br>
-            Length: <br>
-            Front 9: <br>
-            Back 9: 
-          </p>
-        </a>
-      </grid>
-        
-
-
-
-
     </section>
+
+
 
 
     <section id="projects" class="content"> 
@@ -162,7 +173,7 @@
           <img src="temp/self1.jpg"/>
           
           <h1>Professional Portfolio</h1><h5>Personal Project</h5><h3>Apr 2025 - Present</h3>
-            <p>Participated in classes and lab duties for all personal and grant projects under supervision.</p>
+            <p>Ongoing work done to both show off myself as a professional and as a person whilst displaying some of my skills and previous experiences.</p>
         </a>
 
         <a href="https://soupierer.itch.io/kiss-of-death" class="card">
@@ -179,7 +190,7 @@
 
         <a href="https://github.com/VCU-CS-Capstone/cs-25-338-identifying-and-locating-electronic-components" class="card">
           <img src="temp/CS-25-338.png"/>
-          <h1>CS-25-338 Identifying Components</h1><h5>VCU Capstone Project</h5><h3>Aug 2024 - Apr 2025</h3>
+          <h1>CS-25-338 <br>Identifying Components</h1><h5>VCU Capstone Project</h5><h3>Aug 2024 - Apr 2025</h3>
             <p>Project Manager for a AI/ML image processing model using Python, PyTorch and Ultralytics YOLO.</p>
         </a>
 
@@ -210,6 +221,12 @@
 
       <div class="grid">
         <a class="card">
+          <img src="temp/respondr-logo.png"/>
+          <h1>AI Developer / Analyst</h1><h5>Respondr</h5><h3>Sep 2025 - Dec 2025</h3>
+          <p>Collaborated in a virtual team environment using Agile Scrum practices.<br>
+          Developed API routes and data analysis tools to support AI-driven features.</p>
+        </a>
+        <a class="card">
           <img src="temp/eagle-logo.png"/>
           <h1>ACT Technician</h1><h5>Eagle Construction of VA</h5><h3>Jul 2024 - Dec 2024</h3>
           <p>Execute and process data from technology focused on construction technology and providing reports.<br>
@@ -217,7 +234,7 @@
         </a>
         <a class="card">
           <img src="temp/kickers-logo.png"/>
-          <h1>Youth Soccer Coach/Coordinator</h1><h5>Richmond Kickers Soccer Club</h5><h3>Aug 2024 - Dec 2024</h3>
+          <h1>Youth Soccer Coach</h1><h5>Richmond Kickers Soccer Club</h5><h3>Aug 2024 - Dec 2024</h3>
           <p>Youth Soccer coaching for U4/5 age group. Coordinated and managed coaches, parents, and players for each event in the season.</p>
         </a>
         <a class="card">
@@ -235,7 +252,7 @@
       <div class="grid">
         <a class="card">
           <img src="temp/usc-logo.png"/>
-          <h1>University of Southern California</h1><h5>Master of Science: Computer Science</h5><h3>Jan 2026 - Dec 2027</h3>
+          <h1>University of <br>Southern California</h1><h5>Master of Science: Computer Science</h5><h3>Jan 2026 - Dec 2027</h3>
           <!-- <p>Cumulative GPA: N/A <br>
           </p> -->
         </a>
@@ -248,7 +265,7 @@
         </a>
         <a class="card">
           <img src="temp/vccs-logo.png"/>
-          <h1>J. Sargeant Reynolds Community College</h1><h5>Associate of Science: Computer Science</h5><h3>May 2022 - Dec 2023</h3>
+          <h1>J. Sargeant Reynolds <br>Community College</h1><h5>Associate of Science: Computer Science</h5><h3>May 2022 - Dec 2023</h3>
           <p>Cumulative GPA: 3.3 <br>
           Dean’s List: 2022</p>
         </a>
