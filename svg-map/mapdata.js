@@ -478,20 +478,27 @@ var simplemaps_usmap_mapdata={
   locations: {
     "0": {
       name: "Woodley Lakes Golf Course",
-      description: "6,805 yard par 72 course in the Los Angeles Valley Region.",
+      description: "6,805 yard par 72 course in the Los Angeles San Fernando Valley. My Current home course with a personal course record of 94 (+22).",
       lat: 34.183,
       lng: -118.491,
       state: "CA",
       url: "https://golf.lacity.gov/course_woodley_lakes/"
     },
     "1": {
-      name: "Sycamore Creek Golf Course",
-      description: "6,269 yard par 70 course outside Richmond, VA.",
-      lat: 37.674,
-      lng: -77.686,
+      name: "Belmont Golf Course",
+      description: "5,048 yard par 66 course in Richmond, VA. The reimagining of the 1917 course designed by A.W. Tillinghast, brought back to life by First Tee. Scored a 104 (+38).",
+      lat: 37.619,
+      lng: -77.463,
       state: "VA",
-      url: "https://creekrva.com/"
-
+      url: "https://playgolfrva.org/"
+    },
+    "60": {
+      name: "Birdwood Golf Course",
+      description: "6,510 yard par 71 course in Charottesville, VA. 13th ranked golf course in VA in 2026. Scored a 115 (+44)",
+      lat: 38.043,
+      lng: -78.535,
+      state: "VA",
+      url: "https://www.boarsheadresort.com/birdwood-golf"
     },
 
   },
